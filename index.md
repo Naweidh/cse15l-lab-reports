@@ -1,11 +1,13 @@
 # Markdown
-
+ 
 Markdown is used to make *code* more stylish and is also able to make things more **readable**
 
 You can also create bullet points such as this: 
 * Item 1
 * Item 2
 * Item 3
+
+
 or like this:
 1. One
 2. Two
@@ -13,7 +15,8 @@ or like this:
 
 With markdown, one can also do incline code: 
 `Inline code` 
-## other features
+
+## other 
 
 can also do the horizontal rule: 
 ---
