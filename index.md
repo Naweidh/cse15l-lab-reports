@@ -21,14 +21,11 @@ With markdown, one can also do incline code:
 
 can also do the horizontal rule: 
 ---
-
-	![Image][1]
-⋮
-[1]: http://url/b.jpg
+![Image](http://url/favicon.png)
 
 [Link][1]
 ⋮
-[1]: http://b.org
+[1]: [http://b.org](https://commonmark.org/)
 
 
 > Blockquote
