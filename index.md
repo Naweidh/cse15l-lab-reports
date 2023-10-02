@@ -9,9 +9,9 @@ You can also create bullet points such as this:
 
 
 or like this:
-1. One
-2. Two
-3. Three
+1) One
+2) Two
+3) Three
 
 With markdown, one can also do incline code: 
 `Inline code` 
