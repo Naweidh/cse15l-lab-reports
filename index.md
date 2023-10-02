@@ -22,9 +22,14 @@ With markdown, one can also do incline code:
 can also do the horizontal rule: 
 ---
 
-[Link](http://a.com)
+	![Image][1]
+⋮
+[1]: http://url/b.jpg
 
-![Image](http://url/a.png)
+[Link][1]
+⋮
+[1]: http://b.org
+
 
 > Blockquote
 
