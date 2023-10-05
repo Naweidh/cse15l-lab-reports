@@ -1,8 +1,7 @@
 # Lab Report 1
 
 ## cd:
-**Share an example of using the command with no arguments:**
-![Screen Shot 2023-10-04 at 4 51 37 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/635cbea1-5279-4ab8-82b9-86b52f25a8d3)
+**Share an example of using the command with no arguments:**![Screen Shot 2023-10-04 at 8 30 01 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/46f95758-729d-4096-aa08-a0f7eae785dc)
 The working directory before running this command was user@sahara
 When you run cd with no arguments, it changes the current working directory to the user's home directory, which is typically /home/user for the user "user" in a Unix-like system. The output of the cd command, in this case, is not an error; it simply changes the directory.
 
