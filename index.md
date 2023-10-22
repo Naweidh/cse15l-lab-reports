@@ -1,50 +1,46 @@
-# Lab Report 1
+# Lab Report 2
 
-## cd:
-**Share an example of using the command with no arguments:**![Screen Shot 2023-10-04 at 8 30 01 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/46f95758-729d-4096-aa08-a0f7eae785dc)
-The working directory before running this command was user@sahara
-When you run cd with no arguments, it changes the current working directory to the user's home directory, which is typically /home/user for the user "user" in a Unix-like system. The output of the cd command, in this case, is not an error; it simply changes the directory.
+## PART 1:
+**StringServer Code:**
+![String Server Code](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/ad792678-43fc-4757-90e3-65c727d57753)
 
-**Share an exmaple of using the command with a path to a directory as an argument:**
-![Screen Shot 2023-10-04 at 7 49 42 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/c088cf96-c7af-4f48-af11-c2e64b868e7d)
-The working directory before running this command was [user@sahara ~/lecture1]$. 
-When you run cd with an argument that specifies a path to a directory, whichh is lecture1, it changes the current working directory to the directory to lecture1. The output of the cd command, in this case, is not an error. 
+**/Add Message Screenshots:**
+![Screen Shot 2023-10-21 at 4 23 46 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/6e3008b2-402c-4344-b71e-4fa3676ab070)
+![Screen Shot 2023-10-21 at 4 23 26 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/b4a75156-ca77-4d00-a438-040b9a5d62c1)
 
-**Share an example of using the command with a path to a file as an argument:**
-![Screen Shot 2023-10-04 at 8 05 34 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/5f1bffff-eba1-4ade-9699-6e0bfc05e14b)
-The working directory before running this command was [user@sahara ~/lecture1]. 
-When you run cd with a file as an argument it goes to that file as shown in the picture, but it is not an error. But if I wasn't in the lecture1 directory, it would come as a an error as there is no files under the home directory. 
+**Description:**
 
-## ls: 
+**Screenshot 1:**
 
-**Share an example of using the command with no arguments:**
-![Screen Shot 2023-10-04 at 5 09 55 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/c15bf46e-d33e-4ddf-ae0e-eb26d0037822)
-The working directory before running this command was user@sahara
-when you run ls with no arguments, it shows you the availible files in the directory that you are in, which is the home directory. The output of the ls command is not an error. 
+**Methods Called**:
+   - The `handleRequest(URI url)` method of the `StringHandler` class is called.
+**Relevant Arguments**:
+   - The `URI` object `url` is passed as an argument to `handleRequest`. In this case, `url` has the path "/add-message" and a query of "s=Hello."
+**Values of Relevant Fields**:
+   - `message` (a `StringBuilder`) is initially empty.
+   - `sequence` (an `AtomicInteger`) is initially set to 0.
+**Changes in Relevant Fields**:
+   - After the request, `sequence` is incremented to 1 (using `sequence.incrementAndGet()`).
+   - The `message` field is updated to contain "1. Hello\n".
 
+**Screenshot 2:**
+**Methods Called**:
+   - The `handleRequest(URI url)` method of the `StringHandler` class is called.
+**Relevant Arguments**:
+   - The `URI` object `url` is passed as an argument to `handleRequest`. In this case, `url` has the path "/add-message" and a query of "s=How are you."
+**Values of Relevant Fields**:
+   - `message` is "1. Hello\n" (from the previous request).
+   - `sequence` is set to 1 (as it was incremented in the previous request).
+**Changes in Relevant Fields**:
+   - After the request, `sequence` is incremented to 2.
+   - The `message` field is updated to contain "1. Hello\n2. How are you\n."
 
-**Share an exmaple of using the command with a path to a directory as an argument:**
-![Screen Shot 2023-10-04 at 7 51 52 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/7792e7d7-d7e1-43b9-aa7b-7d854fc81645)
-The working directory before running this command was user@sahara.
-Running ls with a path to directory, will show all the files within the directory. In this case it was lecture1 so it showed all the files within the directory such as the Readme file. The output of the ls command, in this case, is not an error
+In both screenshots, the `handleRequest` method is called to handle the incoming requests, and the relevant fields (such as `message` and `sequence`) are modified based on the request. The `message` field accumulates the messages, and the `sequence` field keeps track of the message sequence numbers.
 
-**Share an example of using the command with a path to a file as an argument:**
-![Screen Shot 2023-10-04 at 8 08 04 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/dd456424-2a71-4390-b607-18cf8d8a377c)
-The working directory before running this command was [user@sahara ~/lecture1]. 
-When you run ls with file as an argument it will show all the files inside of the file, which in this is the three different types of languages. If i wasn't in the lecture1 directory, it will show that the file does not exist, because I would be in the home directory. \
+## PART 2: 
+![LabReport2Part2](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/d27c0420-946d-4c20-a754-1fa27c69f489)
 
+## PART 3:
+**In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before:**
+- Private keys for SSH authentication should be stored on your local computer, not on the remote server. This highlights the importance of understanding the distinction between local and remote resources when working with SSH keys for secure connections.
 
-## cat:
-**Share an example of using the command with no arguments:**
-![Screen Shot 2023-10-04 at 5 13 02 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/5752d3a4-f79f-45d7-afca-48e0d1151419)
-The working directory before running this cmmand was user@sahara. 
-When you run cat with no arguments, it waits for input from the user and it wont display any output so this is not an error and in fact the expected output when running cat with no arguments. 
-
-**Share an exmaple of using the command with a path to a directory as an argument:**
-![Screen Shot 2023-10-04 at 7 54 12 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/c2b563a1-0366-41a4-b8cb-b1ca37bd5dbb)
-The working directory before running this cmmand was user@sahara. 
-When you run cat with directory as argument, it will show that lecture1 is an existing directory. The output of the cat command, in this case, is not an error
-
-**Share an example of using the command with a path to a file as an argument:**
-![Screen Shot 2023-10-04 at 8 28 12 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/d2b4d337-1815-493e-9ad1-e78231cdffce)
-The working directory before running this command was [user@sahara ~/lecture1]. When you run cat with a path to a file as an argument, the output will show if the contents of the file exists. This is not an error and this is the expected response. 
