@@ -125,5 +125,3 @@ Example 2 - Inverting the match in a directory search:
 ```grep -rv "pattern" ./directory_to_search```
 This command searches for lines that do not contain "pattern" in all files within the specified directory and its subdirectories.
 
-
-Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
