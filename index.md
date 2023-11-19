@@ -65,63 +65,75 @@ public class ArrayExamples {
 **After: **
 ```
 public class ArrayExamples {
-
-  // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length/2; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
+// Changes the input array to be in reversed order
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length/2; i += 1) {
+    int temp = arr[i];
+    arr[i] = arr[arr.length - i - 1];
+    arr[arr.length - i - 1] = temp;
   }
+}
+
 ```
 #Briefly describe why the fix addresses the issue:
-I changed the line i < arr.length since it was iterating through all the elements in the array. 
+The bug in the original code was that it swapped elements without considering the entire array. The fix addresses this issue by iterating only up to half of the array and swapping elements from both ends. Dividing the loop condition by 2 prevents unnecessary double-swapping.
 
 ##Part 2 - Researching Commands
 
 #-r (recursive search): This option allows you to search for a pattern in all files within a directory and its subdirectories.
 Example 1 - Searching for a specific text in all files within a directory and its subdirectories:
 ```
-grep -r "search_term" ./directory_to_search
+grep -r "array" ./Lab3
 ```
-This command searches for "search_term" in all files within the specified directory and its subdirectories. It's useful for finding occurrences of a specific text across a project.
+This command searches for "array" in all files within the specified directory and its subdirectories. It's useful for finding occurrences of a specific text across a project.
 
 Example 2 - Searching for a pattern in all files and displaying line numbers:
 ```
-grep -rn "pattern" ./directory_to_search
+grep -rn "array" ./Lab3
 ```
-This command searches for "pattern" in all files within the specified directory and its subdirectories, displaying line numbers for each occurrence.
+This command searches for "array" in all files within the specified directory and its subdirectories, displaying line numbers for each occurrence.
 
 #-i (case-insensitive search): This option tells grep to perform a case-insensitive search.
+
 Example 1 - Case-insensitive search for a specific word:
 
-```grep -i "word" file.txt```
-This command searches for "word" in file.txt regardless of the case (e.g., it will match "Word" or "WORD").
+```grep -i "array" ArrayTests.java```
+This command searches for "array" in file.txt regardless of the case.
+
 Example 2 - Case-insensitive search in a directory and its subdirectories:
 
-```grep -ri "pattern" ./directory_to_search```
+```grep -ri "array" ./Lab3```
 
-This command searches for "pattern" case-insensitively in all files within the specified directory and its subdirectories.
+This command searches for "array" case-insensitively in all files within the specified directory and its subdirectories.
 
 #-l (show only filenames): This option tells grep to display only the filenames that contain the specified pattern, not the actual matching lines.
+
 Example 1 - Finding files that contain a specific pattern:
 
-```grep -rl "pattern" ./directory_to_search```
+```
+grep -rl "array" ./Lab3
+```
 
-This command lists the filenames within the specified directory and its subdirectories that contain "pattern."
+This command lists the filenames within the specified directory and its subdirectories that contain "array."
 
 Example 2 - Finding files that contain a case-insensitive pattern:
-```grep -ril "pattern" ./directory_to_search```
+```grep -ril "array" ./Lab3```
 
-This command lists the filenames within the specified directory and its subdirectories that contain "pattern" case-insensitively.
+This command lists the filenames within the specified directory and its subdirectories that contain "array" case-insensitively.
 
 #-v (invert the match): This option tells grep to display lines that do not contain the specified pattern.
+
 Example 1 - Displaying lines that do not contain a word:
 
-```grep -v "word" file.txt```
+```grep -v "array" ArrayTests.java```
 
-This command displays lines from file.txt that do not contain the word "word."
+This command displays lines from file.txt that do not contain the word "array."
+
 Example 2 - Inverting the match in a directory search:
 
-```grep -rv "pattern" ./directory_to_search```
-This command searches for lines that do not contain "pattern" in all files within the specified directory and its subdirectories.
+```grep -rv "array" ./Lab3```
+This command searches for lines that do not contain "array" in all files within the specified directory and its subdirectories.
+
+Citations: 
+“10 Examples of GREP Command in Unix and Linux.” Javarevisited, javarevisited.blogspot.com/2011/06/10-examples-of-grep-command-in-unix-and.html#axzz8JYXxxfEA. Accessed 19 Nov. 2023. 
 
