@@ -94,6 +94,7 @@ grep -rn "array" ./Lab3
 This command searches for "array" in all files within the specified directory and its subdirectories, displaying line numbers for each occurrence.
 
 #-i (case-insensitive search): This option tells grep to perform a case-insensitive search.
+
 Example 1 - Case-insensitive search for a specific word:
 
 ```grep -i "array" ArrayTests.java```
@@ -106,9 +107,12 @@ Example 2 - Case-insensitive search in a directory and its subdirectories:
 This command searches for "array" case-insensitively in all files within the specified directory and its subdirectories.
 
 #-l (show only filenames): This option tells grep to display only the filenames that contain the specified pattern, not the actual matching lines.
+
 Example 1 - Finding files that contain a specific pattern:
 
-```grep -rl "array" ./Lab3```
+```
+grep -rl "array" ./Lab3
+```
 
 This command lists the filenames within the specified directory and its subdirectories that contain "array."
 
@@ -129,4 +133,7 @@ Example 2 - Inverting the match in a directory search:
 
 ```grep -rv "array" ./Lab3```
 This command searches for lines that do not contain "array" in all files within the specified directory and its subdirectories.
+
+Citations: 
+“10 Examples of GREP Command in Unix and Linux.” Javarevisited, javarevisited.blogspot.com/2011/06/10-examples-of-grep-command-in-unix-and.html#axzz8JYXxxfEA. Accessed 19 Nov. 2023. 
 
