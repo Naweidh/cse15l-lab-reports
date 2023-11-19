@@ -1,6 +1,6 @@
-##Part 1 - Bugs
+## Part 1 - Bugs
 
-#A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown):
+# A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown):
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -22,7 +22,7 @@ public class ArrayTests {
 }
 ```
 
-#An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown):
+# An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown):
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -44,14 +44,14 @@ public class ArrayTests {
 }
 ```
 
-#The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above):
+# The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above):
 ![Screen Shot 2023-11-05 at 4 40 56 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/b2525e98-4ba4-44ce-a513-06b514d3b3c8)
 ![Screen Shot 2023-11-05 at 4 42 23 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/b94f3028-ab43-4cec-a38f-220e246deb5e)
 ![Screen Shot 2023-11-05 at 4 42 30 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/5b872dd2-2080-4fac-b374-8f162166d076)
 
 
-#The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown):
-**Before: **
+# The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown):
+** Before: **
 ```
 public class ArrayExamples {
 
@@ -62,7 +62,7 @@ public class ArrayExamples {
     }
   }
 ```
-**After: **
+** After: **
 ```
 public class ArrayExamples {
 // Changes the input array to be in reversed order
@@ -75,12 +75,12 @@ static void reverseInPlace(int[] arr) {
 }
 
 ```
-#Briefly describe why the fix addresses the issue:
+# Briefly describe why the fix addresses the issue:
 The bug in the original code was that it swapped elements without considering the entire array. The fix addresses this issue by iterating only up to half of the array and swapping elements from both ends. Dividing the loop condition by 2 prevents unnecessary double-swapping.
 
-##Part 2 - Researching Commands
+## Part 2 - Researching Commands
 
-#-r (recursive search): This option allows you to search for a pattern in all files within a directory and its subdirectories.
+# -r (recursive search): This option allows you to search for a pattern in all files within a directory and its subdirectories.
 Example 1 - Searching for a specific text in all files within a directory and its subdirectories:
 ```
 grep -r "array" ./Lab3
@@ -93,7 +93,7 @@ grep -rn "array" ./Lab3
 ```
 This command searches for "array" in all files within the specified directory and its subdirectories, displaying line numbers for each occurrence.
 
-#-i (case-insensitive search): This option tells grep to perform a case-insensitive search.
+# -i (case-insensitive search): This option tells grep to perform a case-insensitive search.
 
 Example 1 - Case-insensitive search for a specific word:
 
@@ -106,7 +106,7 @@ Example 2 - Case-insensitive search in a directory and its subdirectories:
 
 This command searches for "array" case-insensitively in all files within the specified directory and its subdirectories.
 
-#-l (show only filenames): This option tells grep to display only the filenames that contain the specified pattern, not the actual matching lines.
+# -l (show only filenames): This option tells grep to display only the filenames that contain the specified pattern, not the actual matching lines.
 
 Example 1 - Finding files that contain a specific pattern:
 
@@ -121,7 +121,7 @@ Example 2 - Finding files that contain a case-insensitive pattern:
 
 This command lists the filenames within the specified directory and its subdirectories that contain "array" case-insensitively.
 
-#-v (invert the match): This option tells grep to display lines that do not contain the specified pattern.
+# -v (invert the match): This option tells grep to display lines that do not contain the specified pattern.
 
 Example 1 - Displaying lines that do not contain a word:
 
@@ -134,6 +134,6 @@ Example 2 - Inverting the match in a directory search:
 ```grep -rv "array" ./Lab3```
 This command searches for lines that do not contain "array" in all files within the specified directory and its subdirectories.
 
-Citations: 
+# Citations: 
 “10 Examples of GREP Command in Unix and Linux.” Javarevisited, javarevisited.blogspot.com/2011/06/10-examples-of-grep-command-in-unix-and.html#axzz8JYXxxfEA. Accessed 19 Nov. 2023. 
 
