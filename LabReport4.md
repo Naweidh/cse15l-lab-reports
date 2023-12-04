@@ -14,7 +14,8 @@ To run the code and check for failures, i had to run bash test.sh
 
 ## Step 7:
 ![Screen Shot 2023-12-03 at 5 21 50 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/2f286444-98d7-40d2-b0a0-577ffedfe947)
-Keys pressed: Vim ListExamples.java, Enter, vd, i, 2, :wq, enter. I had to go into vim in order to change the code from index1 to index 2. I had to delete the code with "d", then insert a new number with "i". Then saved with ":wq"
+Keys pressed: Vim ListExamples.java, Enter, vd, i, 2, :wq, enter. 
+I had to go into vim in order to change the code from index1 to index 2. I had to delete the code with "d", then insert a new number with "i". Then saved with ":wq"
 
 ## Step 8:
 ![Screen Shot 2023-12-03 at 5 22 10 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/ae108831-655a-4a1c-8b98-45ef4dda4a26)
@@ -23,5 +24,7 @@ Keys pressed: bash, test.sh, Enter
 To run the code and check that the code was successfully working, i had to run bash test.sh.
 
 ## Step 9:
+Keys pressed: git add, enter, git commit -m "updated", enter, git push, enter. 
+In order to update, commit, and push to my github, I had to do these steps to do it through ssh.
 
 
