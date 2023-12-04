@@ -70,3 +70,5 @@ public static int add(int a, int b) {
 ```
 
 # Part 2- Reflection
+- From my lab experience, I didnt know much about a lot of the shorter commands to make working on code a lot easier and efficient rather than starting over or doing the long er way out. I learned a lot about how to problem solve with all the many situations that i was given as well. 
+
