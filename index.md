@@ -1,74 +1,30 @@
-# Part 1- Debugging Scenario
+## Step 4:
+![Screen Shot 2023-12-03 at 5 19 12 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/e3abafc2-c76e-40a0-b160-41ac7e2d05d3)
+Keys pressed: ssh cs15fa23ci@ieng6.ucsd.edu. <Enter>. I typed in the ssh command with my course specific account in order to remote ssh. 
 
-## 1. Original Post: Description:
-Hi everyone! I'm having a strange issue with my Java program. The output is not what I expected, and I'm not sure what's going wrong.
+## Step 5:
+![Screen Shot 2023-12-03 at 6 02 46 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/77c43671-60e9-4a5d-a4bb-1e1bc140c0dc)
 
-Calculator.java
-```
-public class Calculator {
-    public static void main(String[] args) {
-        int result = add(5, 7);
-        System.out.println("Result: " + result);
-    }
+Keys pressed: git clone, Ctrl-v, Enter. I had to git clone the ssh remote link for my lab7 code.
 
-    public static int add(int a, int b) {
-        return a - b; // Incorrect code causing the bug
-    }
-}
+## Step 6:
+![Screen Shot 2023-12-03 at 5 20 03 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/bff51b29-a7a4-45af-aa66-6c9b24366642)
+Keys pressed: bash, test.sh, Enter
+To run the code and check for failures, i had to run bash test.sh
 
-```
-run.sh
-```
-javac Calculator.java
-java Calculator
+## Step 7:
+![Screen Shot 2023-12-03 at 5 21 50 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/2f286444-98d7-40d2-b0a0-577ffedfe947)
+Keys pressed: Vim ListExamples.java, Enter, vd, i, 2, :wq, enter. 
+I had to go into vim in order to change the code from index1 to index 2. I had to delete the code with "d", then insert a new number with "i". Then saved with ":wq"
 
-```
-## 2. TA Response:
-Can you try adding some debug statements or using a debugger to check the values of a and b inside the add method? It might give us more insight into what's going wrong.
+## Step 8:
+![Screen Shot 2023-12-03 at 5 22 10 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/ae108831-655a-4a1c-8b98-45ef4dda4a26)
+Keys pressed:
+Keys pressed: bash, test.sh, Enter
+To run the code and check that the code was successfully working, i had to run bash test.sh.
 
-## 3. Output of Bug:
+## Step 9:
+Keys pressed: git add, enter, git commit -m "updated", enter, git push, enter. 
+In order to update, commit, and push to my github, I had to do these steps to do it through ssh.
 
-![Screen Shot 2023-12-03 at 8 07 38 PM](https://github.com/Naweidh/cse15l-lab-reports/assets/146774867/846c7a42-8a45-439a-b658-ed202714f494)
-
-## 4. Setup
-The file & directory structure needed: 
--Calculator.java (Java file)
--run.sh (Bash script)
-
-The contents of each file before fixing the bug:
--Calculator.java
-```
-public class Calculator {
-    public static void main(String[] args) {
-        int result = add(5, 7);
-        System.out.println("Result: " + result);
-    }
-
-    public static int add(int a, int b) {
-        return a - b; // Incorrect code causing the bug
-    }
-}
-
-```
-run.sh
-```
-javac Calculator.java
-java Calculator
-
-```
-
-The full command line (or lines) you ran to trigger the bug:
-- bash run.sh
-
-A description of what to edit to fix the bug:
-```
-public static int add(int a, int b) {
-    return a + b; // Fix the bug by changing subtraction to addition
-}
-
-
-```
-
-# Part 2- Reflection
-- From my lab experience, I didnt know much about a lot of the shorter commands to make working on code a lot easier and efficient rather than starting over or doing the long er way out. I learned a lot about how to problem solve with all the many situations that i was given as well. 
 
